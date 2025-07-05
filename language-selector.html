@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CVwizard - Choose your language</title>
+    
+    <style>
+        :root {
+            --color-brand-50: #eaf3fc;
+            --color-brand-100: #d2e6f9;
+            --color-brand-200: #a0cbf2;
+            --color-brand-300: #6fafeb;
+            --color-brand-400: #3e94e4;
+            --color-brand-500: #2a72d7;
+            --color-brand-700: #165b9c;
+            --color-background: #f8fbfc;
+            --font-family-header: "ui-sans-serif";
+            --font-family-sans: "ui-sans-serif";
+            --border-radius: 50px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family-sans), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            color: #1d1d20;
+            background-color: var(--color-background);
+            line-height: 1.5;
+        }
+
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1150px;
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+            width: 100%;
+        }
+
+        .container-narrow {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 864px;
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+            width: 100%;
+        }
+
+        .language-selector {
+            background-color: white;
+            width: 100%;
+            padding-top: 120px;
+            min-height: 100vh;
+        }
+
+        .main-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            max-width: 16rem;
+        }
+
+        .logo {
+            height: auto;
+            width: 100%;
+        }
+
+        .title {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+            font-weight: 500;
+            font-family: var(--font-family-header);
+            color: #1d1d20;
+            text-align: center;
+        }
+
+        .language-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .language-link {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            font-weight: 400;
+            color: #6e6e76;
+            text-decoration: none;
+            padding: 0.75rem 1rem;
+            border-radius: 0.125rem;
+            transition: color 0.2s ease;
+        }
+
+        .language-link:hover {
+            color: #3f3f45;
+        }
+
+        .language-link:focus {
+            outline: 2px solid var(--color-brand-200);
+            outline-offset: 2px;
+        }
+
+        @media (min-width: 768px) {
+            .title {
+                font-size: 2.25rem;
+                line-height: 2.5rem;
+            }
+            
+            .language-link {
+                padding: 0.25rem 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="language-selector">
+        <section class="main-section container">
+            <div class="logo-container">
+                <img src="logo-black-text.svg" alt="CVwizard" class="logo">
+            </div>
+            
+            <h1 class="title">Choose your language</h1>
+            
+            <div class="language-grid container-narrow">
+                <a class="language-link" href="id.html">Bahasa Indonesia</a>
+                <a class="language-link" href="da.html">Dansk</a>
+                <a class="language-link" href="de.html">Deutsch</a>
+                <a class="language-link" href="en.html">English</a>
+                <a class="language-link" href="uk.html">English (UK)</a>
+                <a class="language-link" href="es.html">Español</a>
+                <a class="language-link" href="co.html">Español (CO)</a>
+                <a class="language-link" href="fr.html">Français</a>
+                <a class="language-link" href="it.html">Italiano</a>
+                <a class="language-link" href="hu.html">Magyar</a>
+                <a class="language-link" href="nl.html">Nederlands</a>
+                <a class="language-link" href="no.html">Norsk</a>
+                <a class="language-link" href="pl.html">Polski</a>
+                <a class="language-link" href="br.html">Português (BR)</a>
+                <a class="language-link" href="pt.html">Português (PT)</a>
+                <a class="language-link" href="ru.html">Pусский</a>
+                <a class="language-link" href="ro.html">Română</a>
+                <a class="language-link" href="fi.html">Suomi</a>
+                <a class="language-link" href="sv.html">Svenska</a>
+                <a class="language-link" href="vi.html">Tiếng Việt</a>
+                <a class="language-link" href="tr.html">Türkçe</a>
+                <a class="language-link" href="cs.html">Čeština</a>
+                <a class="language-link" href="el.html">ελληνικά</a>
+                <a class="language-link" href="bg.html">Български</a>
+                <a class="language-link" href="ua.html">Українська</a>
+                <a class="language-link" href="he.html">עִברִית</a>
+                <a class="language-link" href="ar.html">العربية</a>
+                <a class="language-link" href="zh.html">中文（简体）</a>
+                <a class="language-link" href="tw.html">中文（繁體）</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
